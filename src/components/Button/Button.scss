@@ -1,0 +1,16 @@
+$primary-color: #5dadec;
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 4rem;
+  width: 40%;
+  padding: 3rem;
+  color: #ffffff;
+  background-color: $primary-color;
+  img {
+    fill: #fff;
+  }
+}
