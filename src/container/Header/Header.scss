@@ -54,6 +54,7 @@
 @media (max-width: 768px) {
   .hero-image {
     height: 100vh;
+    background-position: right;
   }
   .name-block {
     padding: 2rem;
@@ -94,15 +95,15 @@
     width: 320px;
   }
   .emoji-image {
-    width: 60px;
+    width: 70px;
     text-align: start;
   }
   .name-block-txt {
     h1 {
-      font-size: 2.4rem;
+      font-size: 2.6rem;
     }
     p {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
   }
 }
