@@ -2,15 +2,36 @@ $primary-color: #5dadec;
 
 .button-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   border-radius: 20px;
   margin-top: 4rem;
-  width: 40%;
-  padding: 3rem;
-  color: #ffffff;
+  // width: 47%;
+  padding: 2.5rem 3rem;
+  color: var(--font-color);
+  background-color: #ffffff;
+  border: none;
+  font-size: 1.9rem;
+  cursor: pointer;
+}
+
+.button--contact {
+  color: var(--font-color);
+  &:hover {
+    img {
+      transition: all 0.15s ease-in-out;
+      transform: translateX(5px);
+    }
+  }
+}
+
+.button--download {
   background-color: $primary-color;
-  img {
-    fill: #fff;
+  color: #ffffff;
+  &:hover {
+    img {
+      transition: all 0.15s ease-in-out;
+      transform: translateY(5px);
+    }
   }
 }

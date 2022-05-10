@@ -1,12 +1,18 @@
 import "./Button.scss";
 import { images } from "../../constants/index";
 
-function Button() {
+const BUTTON_TYPE_CLASSES = {
+  contact: "button--contact",
+  download: "button--download",
+};
+
+function Button({ children, title, buttonType }) {
   return (
-    <div className="button-container">
-      <p>Download CV</p>
-      <img src={images.download} />
-    </div>
+    <button className={`button-container ${BUTTON_TYPE_CLASSES[buttonType]}`}>
+      <p>{title}</p>
+      {/* <img src={images.arrow} /> */}
+      {children}
+    </button>
   );
 }
 

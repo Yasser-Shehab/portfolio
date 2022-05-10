@@ -13,6 +13,7 @@ import graphql from "../assets/icons/graphql.png";
 import figma from "../assets/icons/figma.png";
 import handwave from "../assets/icons/handwave.png";
 import header from "../assets/backgrounds/header.png";
+import arrow from "../assets/icons/arrow.svg";
 
 export default {
   css,
@@ -21,6 +22,7 @@ export default {
   node,
   mongodb,
   download,
+  arrow,
   react,
   redux,
   sass,

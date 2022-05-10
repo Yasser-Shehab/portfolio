@@ -1,6 +1,6 @@
 .hero-image {
   background-image: url(../../assets/backgrounds/header.png);
-  height: 80vh;
+  height: 90vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,17 +46,33 @@
 .hero-buttons {
   display: flex;
   justify-content: space-between;
+  button {
+    width: 45%;
+  }
 }
 
 @media (max-width: 768px) {
+  .hero-image {
+    height: 75vh;
+  }
   .name-block {
     padding: 2rem;
     width: 400px;
   }
 
   .emoji-image {
-    width: 90px;
+    width: 100px;
     text-align: start;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    button {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .name-block-txt {
@@ -70,6 +86,9 @@
 }
 
 @media (max-width: 420px) {
+  .hero-image {
+    height: 70vh;
+  }
   .name-block {
     padding: 2rem;
     width: 320px;
