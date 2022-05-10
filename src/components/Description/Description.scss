@@ -1,0 +1,25 @@
+.description-block {
+  margin-top: 9rem;
+  color: var(--font-color);
+  text-align: center;
+  p {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 768px) {
+  .description-block {
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .description-block {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}

@@ -46,6 +46,7 @@
 .hero-buttons {
   display: flex;
   justify-content: space-between;
+  margin-top: 4rem;
   button {
     width: 45%;
   }
@@ -68,6 +69,7 @@
 
   .hero-buttons {
     flex-direction: column;
+    gap: 3rem;
 
     button {
       width: 80%;

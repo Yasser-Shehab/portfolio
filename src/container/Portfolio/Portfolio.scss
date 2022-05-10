@@ -1,0 +1,18 @@
+.projects-section-container {
+  margin: 8rem auto;
+
+  .project-container {
+    margin-top: 12rem;
+  }
+  :nth-child(even) {
+    .project-content {
+      flex-direction: row-reverse;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        .project-buttons {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

@@ -14,14 +14,18 @@ import figma from "../assets/icons/figma.png";
 import handwave from "../assets/icons/handwave.png";
 import header from "../assets/backgrounds/header.png";
 import arrow from "../assets/icons/arrow.svg";
+import project1 from "../assets/projects/project1.jpg";
+import github from "../assets/icons/github.svg";
 
 export default {
   css,
   html,
   javascript,
   node,
+  project1,
   mongodb,
   download,
+  github,
   arrow,
   react,
   redux,
