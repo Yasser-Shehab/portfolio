@@ -17,9 +17,10 @@ function Header() {
           </div>
         </div>
         <div className="hero-buttons">
-          <Button buttonType="download" title="Download CV">
+          <Button buttonType="download" title="Download CV" href={images.cv}>
             <img src={images.download} />
           </Button>
+
           <Button buttonType="contact" title="Get in touch">
             <img src={images.arrow} />
           </Button>

@@ -16,6 +16,7 @@ import header from "../assets/backgrounds/header.png";
 import arrow from "../assets/icons/arrow.svg";
 import project1 from "../assets/projects/project1.jpg";
 import github from "../assets/icons/github.svg";
+import cv from "../assets/Yasser-Shehab-CV.pdf";
 
 export default {
   css,
@@ -28,6 +29,7 @@ export default {
   github,
   arrow,
   react,
+  cv,
   redux,
   sass,
   typescript,

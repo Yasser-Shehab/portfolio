@@ -15,6 +15,11 @@ $primary-color: #5dadec;
   img {
     margin-left: 1rem;
   }
+  a {
+    display: flex;
+
+    color: #fff;
+  }
 }
 
 .button--contact {
