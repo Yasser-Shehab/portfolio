@@ -1,0 +1,45 @@
+.contact-form {
+  margin-top: 8.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+.submit-success {
+  margin: 10rem auto;
+  max-width: 500px;
+  background-color: #77bef4;
+  text-align: center;
+  padding: 5rem 3rem;
+  border-radius: 20px;
+  p {
+    font-size: 3rem;
+  }
+  @media (max-width: 768px) {
+    width: 95%;
+    padding: 4rem 2rem;
+    p {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.social-media-section {
+  margin-top: 12rem;
+  text-align: center;
+  h2 {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  .icon-container {
+    margin: 1.5rem;
+  }
+}

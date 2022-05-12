@@ -13,7 +13,7 @@ function Header() {
           <div className="name-block-txt">
             <p>Hello, I am</p>
             <h1>Yasser Shehab</h1>
-            <p>Front-End Devloper 🎨</p>
+            <p>Front-End Developer 🎨</p>
           </div>
         </div>
         <div className="hero-buttons">

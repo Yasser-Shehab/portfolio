@@ -1,0 +1,12 @@
+footer {
+  display: grid;
+  margin-top: 16rem;
+  text-align: center;
+  background-color: var(--background-color);
+  p {
+    font-size: 2rem;
+    margin: auto;
+    color: var(--font-color);
+    padding: 3rem;
+  }
+}

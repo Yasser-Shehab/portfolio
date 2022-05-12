@@ -14,3 +14,14 @@
     object-fit: cover;
   }
 }
+
+.hyper-link {
+  .icon-container {
+    background-color: var(--background-color);
+    width: 80px;
+    height: 80px;
+  }
+  .icon__img {
+    margin: auto;
+  }
+}

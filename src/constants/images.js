@@ -18,7 +18,9 @@ import project1 from "../assets/projects/project1.jpg";
 import git from "../assets/icons/git.png";
 import github from "../assets/icons/github.svg";
 import cv from "../assets/Yasser-Shehab-CV.pdf";
-
+import send from "../assets/icons/send.svg";
+import facebook from "../assets/icons/icons8-facebook.svg";
+import linkedin from "../assets/icons/icons8-linkedin.svg";
 export default {
   css,
   html,
@@ -29,7 +31,10 @@ export default {
   download,
   github,
   git,
+  facebook,
+  linkedin,
   arrow,
+  send,
   react,
   cv,
   redux,
