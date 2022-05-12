@@ -1,8 +1,7 @@
 .skills-container {
   background-color: var(--secondary-background);
   margin-top: 15rem;
-  height: 90vh;
-  overflow: auto;
+  padding: 1rem 0;
 }
 
 .skills-icons {
@@ -13,10 +12,8 @@
   justify-items: center;
   row-gap: 6.5rem;
   max-width: 900px;
+  margin: 10rem auto;
 
-  margin-top: 12rem;
-  margin-left: auto;
-  margin-right: auto;
   @media (max-width: 530px) {
     grid-template-columns: repeat(2, 1fr);
   }

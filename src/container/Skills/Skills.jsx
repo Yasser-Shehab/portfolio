@@ -21,8 +21,8 @@ function Skills() {
     <div className="skills-container">
       <Description title="🔧 Skills" content="Some of the tools I am proficient with" />
       <div className="skills-icons">
-        {iconImages.map((icon) => {
-          return <Icon image={icon} />;
+        {iconImages.map((icon, index) => {
+          return <Icon key={index} image={icon} />;
         })}
       </div>
     </div>
