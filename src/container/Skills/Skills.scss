@@ -1,0 +1,23 @@
+.skills-container {
+  background-color: var(--secondary-background);
+  margin-top: 15rem;
+  height: 90vh;
+  overflow: auto;
+}
+
+.skills-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+
+  justify-content: center;
+  justify-items: center;
+  row-gap: 6.5rem;
+  max-width: 900px;
+
+  margin-top: 12rem;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 530px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
