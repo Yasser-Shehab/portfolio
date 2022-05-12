@@ -21,7 +21,7 @@ function Header() {
             <img src={images.download} />
           </Button>
 
-          <Button buttonType="contact" title="Get in touch">
+          <Button buttonType="contact" title="Get in touch" type="scroll" href="contact-container">
             <img src={images.arrow} />
           </Button>
         </div>
