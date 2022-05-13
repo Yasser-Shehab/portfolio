@@ -70,29 +70,39 @@ $background: #eff3f9;
 
 @media (max-width: 768px) {
   .project-container {
-    width: 80%;
+    width: 90%;
+  }
+
+  .project__image {
+    width: 100%;
   }
   .project-content {
     flex-direction: column;
   }
 
-  .project__title {
-    flex-direction: column;
-    h1 {
-      margin-top: 2rem;
+  .project-icon {
+    padding: 1.2rem;
+  }
 
+  .project-description {
+    gap: 1.5rem;
+  }
+
+  .project__title {
+    h1 {
       font-size: 4vw;
     }
   }
 
   .project__details {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   .project-buttons {
-    justify-content: center;
+    justify-content: space-around;
     button {
-      padding: 1.5rem 2rem;
+      padding: 1rem 1rem;
+      border-radius: 10px;
     }
   }
   .project__image {
