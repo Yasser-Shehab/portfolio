@@ -1,4 +1,5 @@
 import { images } from "../constants/index";
+
 export const projects = [
   {
     title: "Mile For Construction",
@@ -12,6 +13,15 @@ export const projects = [
     description: `Using Redux and Movie Api this application lets you search for you favorite movies and add the to favorite list `,
     image: images.project2,
     website: "https://movie-app-pi-wine.vercel.app/",
+    githubRepo: "https://github.com/Yasser-Shehab/Movie-App",
+  },
+  {
+    title: "To Do App",
+    description:
+      "A Simple to do list Application, you can add , Delete , Edit , Search for you to do and set a priority.",
+    image: images.project3,
+    website: "https://to-do-react-three.vercel.app/",
+    githubRepo: "https://github.com/Yasser-Shehab/To-Do-React",
   },
 ];
 

@@ -16,12 +16,14 @@ import header from "../assets/backgrounds/header.png";
 import arrow from "../assets/icons/arrow.svg";
 import project1 from "../assets/projects/project1.jpg";
 import project2 from "../assets/projects/Project2.JPG";
+import project3 from "../assets/projects/project3.JPG";
 import git from "../assets/icons/git.png";
 import github from "../assets/icons/github.svg";
 import cv from "../assets/Yasser-Shehab-CV.pdf";
 import send from "../assets/icons/send.svg";
 import facebook from "../assets/icons/icons8-facebook.svg";
 import linkedin from "../assets/icons/icons8-linkedin.svg";
+
 export default {
   css,
   html,
@@ -29,6 +31,7 @@ export default {
   node,
   project1,
   project2,
+  project3,
   mongodb,
   download,
   github,

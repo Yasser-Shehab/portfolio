@@ -10,7 +10,6 @@ function Project({ title, description, image, website, githubRepo }) {
 
         <div className="project-description">
           <div className="project__title">
-            <div className="project-icon">🚧</div>
             <h1>{title}</h1>
           </div>
           <div className="project__details">{description}</div>
