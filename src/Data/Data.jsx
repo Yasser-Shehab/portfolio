@@ -16,6 +16,13 @@ export const projects = [
     githubRepo: "https://github.com/Yasser-Shehab/Movie-App",
   },
   {
+    title: "My Reads",
+    description: `A Books Application to Manage a Collection of Books you can also search for new books.`,
+    website: "https://my-reads-topaz.vercel.app/",
+    image: images.project4,
+    githubRepo: "https://github.com/Yasser-Shehab/MyReads",
+  },
+  {
     title: "To Do App",
     description:
       "A Simple to do list Application, you can add , Delete , Edit , Search for you to do and set a priority.",

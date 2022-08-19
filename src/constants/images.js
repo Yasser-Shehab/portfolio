@@ -17,6 +17,7 @@ import arrow from "../assets/icons/arrow.svg";
 import project1 from "../assets/projects/project1.jpg";
 import project2 from "../assets/projects/Project2.JPG";
 import project3 from "../assets/projects/project3.JPG";
+import project4 from "../assets/projects/project4.JPG";
 import git from "../assets/icons/git.png";
 import github from "../assets/icons/github.svg";
 import cv from "../assets/Yasser-Shehab-CV.pdf";
@@ -32,6 +33,7 @@ export default {
   project1,
   project2,
   project3,
+  project4,
   mongodb,
   download,
   github,
