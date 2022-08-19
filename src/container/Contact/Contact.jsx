@@ -1,37 +1,37 @@
 import "./Contact.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Description, Input } from "../../components/index";
 import { Icon } from "../../components/index";
 import { images } from "../../constants/index";
 import { useForm, ValidationError } from "@formspree/react";
+import { toast } from "react-toastify";
+import { contactData } from "../../Data/Data";
 
 function Contact() {
+  const [contactIcons, setContactIcons] = useState(contactData);
   const [inputValues, setInputValues] = useState({
     name: "",
     email: "",
     message: "",
   });
   const [state, handleSubmit] = useForm("mayvajoe");
-  const iconImages = [
-    {
-      image: images.linkedin,
-      type: "link",
-      link: "https://www.linkedin.com/in/yasser-shehab-494638182/",
-    },
-    { image: images.facebook, type: "link", link: "https://www.facebook.com/yassershehab.eldeen" },
-  ];
-  if (state.succeeded) {
-    return (
-      <div className="submit-success">
-        <p>Your message ✉️ was sent 😊</p>
-      </div>
-    );
-  }
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setInputValues({ ...inputValues, [name]: value });
     console.log(inputValues);
+  };
+  const submitHandle = () => {
+    if (state.succeeded) {
+      toast.success("Sent Successfuly");
+    } else {
+      toast.error("An Error Occurred");
+    }
+    setInputValues({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
 
   return (
@@ -58,7 +58,7 @@ function Contact() {
             title="Your Message"
             type="textarea"
             name="message"
-            submit={state.submitting}
+            submitHandle={submitHandle}
             value={inputValues.message}
           />
         </form>
@@ -69,11 +69,13 @@ function Contact() {
           <br />
           reach me through my social media
         </h2>
-        <div className="social-icons">
-          {iconImages.map((icon, index) => {
-            return <Icon key={index} image={icon.image} link={icon.link} type={icon.type} />;
-          })}
-        </div>
+        {contactIcons && (
+          <div className="social-icons">
+            {contactIcons.map((icon, index) => {
+              return <Icon key={index} image={icon.image} link={icon.link} type={icon.type} />;
+            })}
+          </div>
+        )}
       </div>
     </div>
   );

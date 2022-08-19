@@ -15,6 +15,7 @@ import handwave from "../assets/icons/handwave.png";
 import header from "../assets/backgrounds/header.png";
 import arrow from "../assets/icons/arrow.svg";
 import project1 from "../assets/projects/project1.jpg";
+import project2 from "../assets/projects/Project2.JPG";
 import git from "../assets/icons/git.png";
 import github from "../assets/icons/github.svg";
 import cv from "../assets/Yasser-Shehab-CV.pdf";
@@ -27,6 +28,7 @@ export default {
   javascript,
   node,
   project1,
+  project2,
   mongodb,
   download,
   github,
