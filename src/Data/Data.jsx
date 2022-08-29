@@ -3,8 +3,7 @@ import { images } from "../constants/index";
 export const projects = [
   {
     title: "Mile For Construction",
-    description: `Freelance project for a construction Enginnering company consisted of two parts a
-         dashboard and a front page to see the company projects`,
+    description: `Freelance project for a construction Enginnering Company it consisted of a website and content management system.`,
     image: images.project1,
     website: "https://mile-frontend.vercel.app/",
   },
