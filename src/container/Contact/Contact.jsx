@@ -1,5 +1,5 @@
 import "./Contact.scss";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Description, Input } from "../../components/index";
 import { Icon } from "../../components/index";
 import { images } from "../../constants/index";
@@ -19,19 +19,28 @@ function Contact() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setInputValues({ ...inputValues, [name]: value });
-    console.log(inputValues);
   };
   const submitHandle = () => {
+    if (
+      inputValues.name.trim().length === 0 ||
+      inputValues.email.trim().length === 0 ||
+      inputValues.message.trim().length === 0
+    ) {
+      toast.error("Please fill all the fields");
+      return;
+    }
     if (state.succeeded) {
       toast.success("Sent Successfuly");
+      setInputValues({
+        name: "",
+        email: "",
+        message: "",
+      });
     } else {
       toast.error("An Error Occurred");
+      console.log(state.succeeded);
+      console.log(state.errors);
     }
-    setInputValues({
-      name: "",
-      email: "",
-      message: "",
-    });
   };
 
   return (
@@ -43,6 +52,7 @@ function Contact() {
             onChange={handleChange}
             type="text"
             title="Your name"
+            id="name"
             name="name"
             value={inputValues.name}
           />
@@ -50,6 +60,7 @@ function Contact() {
             onChange={handleChange}
             type="email"
             title="Your email"
+            id="email"
             name="email"
             value={inputValues.email}
           />
@@ -57,6 +68,7 @@ function Contact() {
             onChange={handleChange}
             title="Your Message"
             type="textarea"
+            id="message"
             name="message"
             submitHandle={submitHandle}
             value={inputValues.message}
