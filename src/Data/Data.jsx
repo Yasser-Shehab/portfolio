@@ -9,7 +9,7 @@ export const projects = [
   },
   {
     title: "Movie App",
-    description: `Using Redux and Movie Api this application lets you search for you favorite movies and add the to favorite list `,
+    description: `A Movie App that you can search for your favorite movies and add them to your favorites`,
     image: images.project2,
     website: "https://movie-app-pi-wine.vercel.app/",
     githubRepo: "https://github.com/Yasser-Shehab/Movie-App",
